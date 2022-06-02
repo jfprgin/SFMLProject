@@ -13,6 +13,9 @@ sf::Sprite bgSprite;
 sf::Texture heroTexture;
 sf::Sprite heroSprite;
 
+sf::Vector2f playerPosition;
+bool playerMoving = false;
+
 void init() {
 	// Load sky Texture
 	skyTexture.loadFromFile("Assets/graphics/sky.png");
@@ -34,6 +37,42 @@ void draw() {
 	window.draw(heroSprite);
 }
 
+void updateInput() {
+	sf::Event event;
+
+	while (window.pollEvent(event))
+	{
+		if (event.type == sf::Event::KeyPressed)
+		{
+			if (event.key.code == sf::Keyboard::Right)
+			{
+				playerMoving = true;
+			}
+		}
+
+		if (event.type == sf::Event::KeyReleased)
+		{
+			if (event.key.code == sf::Keyboard::Right)
+			{
+				playerMoving = false;
+			}
+		}
+
+		if (event.key.code == sf::Keyboard::Escape || event.type == sf::Event::Closed)
+		{
+			window.close();
+		}
+	}
+}
+
+void update(float dt)
+{
+	if (playerMoving)
+	{
+		heroSprite.move(50.0f * dt, 0);
+	}
+}
+
 int main() {
 	////init game objects
 	//sf::RectangleShape rect(sf::Vector2f(500.0f, 300.0f));
@@ -53,9 +92,17 @@ int main() {
 	//triangle.setPoint(2, sf::Vector2f(100, 0));
 	//triangle.setFillColor(sf::Color(128, 0, 128, 255));
 	//triangle.setPosition(viewSize.x / 2, viewSize.y / 2);
+	sf::Clock clock;
 	init();
 
 	while (window.isOpen()) {
+		//Update input
+		updateInput();
+
+		//Update Game
+		sf::Time dt = clock.restart();
+		update(dt.asSeconds());
+
 		window.clear(sf::Color::Red);
 		draw();
 

@@ -1,1 +1,12 @@
-﻿  SFMLProject.vcxproj -> C:\Users\Jakov Filip Prgin\source\repos\SFMLProject\x64\Debug\SFMLProject.exe
+﻿  Source.cpp
+c:\users\jakov filip prgin\source\repos\sfmlproject\sfmlproject\source.cpp(4): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\jakov filip prgin\source\repos\sfmlproject\sfmlproject\source.cpp(31): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+  SFMLProject.vcxproj -> C:\Users\Jakov Filip Prgin\source\repos\SFMLProject\x64\Debug\SFMLProject.exe
