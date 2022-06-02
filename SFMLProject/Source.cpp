@@ -1,3 +1,4 @@
+//Version_01
 #include "SFML/Graphics.hpp"
 
 sf::Vector2f viewSize(1024, 768);
