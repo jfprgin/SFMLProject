@@ -1,12 +1,14 @@
-﻿  Source.cpp
-c:\users\jakov filip prgin\source\repos\sfmlproject\sfmlproject\source.cpp(4): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+﻿  main.cpp
+c:\users\jakov filip prgin\source\repos\sfmlproject\sfmlproject\main.cpp(10): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
           with
           [
               T=float
           ]
-c:\users\jakov filip prgin\source\repos\sfmlproject\sfmlproject\source.cpp(31): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+  Rocket.cpp
+c:\users\jakov filip prgin\source\repos\sfmlproject\sfmlproject\rocket.cpp(18): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
+  Generating Code...
   SFMLProject.vcxproj -> C:\Users\Jakov Filip Prgin\source\repos\SFMLProject\x64\Debug\SFMLProject.exe
