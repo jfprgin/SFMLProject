@@ -129,7 +129,7 @@ void init()
 	bgTexture.loadFromFile("Assets/graphics/bg.png");
 	bgSprite.setTexture(bgTexture);
 
-	hero.init("Assets/graphics/hero.png", sf::Vector2f(viewSize.x * 0.25f, viewSize.y * 0.5f), 200);
+	hero.init("Assets/graphics/heroAnim.png", 4, 1.0f, sf::Vector2f(viewSize.x * 0.25f, viewSize.y * 0.5f), 200);
 	srand((int)time(0));
 
 	//Audio

@@ -1,7 +1,24 @@
-﻿  main.cpp
-c:\users\jakov filip prgin\source\repos\sfmlproject\sfmlproject\main.cpp(11): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+﻿  Hero.cpp
+C:\Users\Korisnik\source\repos\SFMLProject\SFMLProject\Hero.cpp(28,70): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\Korisnik\source\repos\SFMLProject\SFMLProject\Hero.cpp(28,43): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+  main.cpp
+C:\Users\Korisnik\source\repos\SFMLProject\SFMLProject\main.cpp(11,38): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
           with
           [
               T=float
           ]
-  SFMLProject.vcxproj -> C:\Users\Jakov Filip Prgin\source\repos\SFMLProject\x64\Debug\SFMLProject.exe
+C:\Users\Korisnik\source\repos\SFMLProject\SFMLProject\main.cpp(11,26): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Generating Code...
+  SFMLProject.vcxproj -> C:\Users\Korisnik\source\repos\SFMLProject\x64\Debug\SFMLProject.exe
